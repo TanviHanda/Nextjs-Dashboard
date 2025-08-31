@@ -1,0 +1,21 @@
+/* Another floating shape */
+.shape2 {
+  position: absolute;
+  bottom: 5px;
+  left: 95px;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #ff01d9, #06b6d4);
+  border-radius: 50%;
+  /* opacity: 0.4; */
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
