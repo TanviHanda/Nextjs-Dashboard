@@ -1,4 +1,5 @@
 import '@/app/ui/global.css';
+import InvoiceStatus from './ui/invoices/status';
 export default function RootLayout({
   children,
 }: {
@@ -6,7 +7,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}
+      <body>
+      <InvoiceStatus status="paid"/>
+     
+        {children}
       </body>
     </html>
   );
